@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #block1{background-color: chartreuse;
+                font-style: italic;
+        }
+        #block2{background-color: crimson;
+            font-style: italic;
+        }
+        #block3{background-color: cyan;
+                font-style: italic;}
+    </style>
+</head>
+<body>
+<h2 id='heading'> HEYYY DONARS!</h2>
+<button type = "button" onclick='document.getElementById("heading").innerHTML = "WELCOME ONBOARD"'>
+touch here
+</button>
+    <div class="class1">
+       <button id="block1">
+        "donar1"
+       </button>
+    </div>
+    <div class="class2">
+        <button onclick = "new_second()">
+            <p>"we can add more donars</p>
+        </button>
+
+        <button id="block2">
+           "donar2"
+        </button>
+    </div>
+
+    <div class="class3">
+        <button id = "block3"> 
+            click me
+        "donar3"
+        </button>
+    </div>
+
+    <script>
+       var new_third = document.querySelector("#block3").innerHTML = "last donar";
+       var new_first = document.querySelector("#block1").style.backgroundcolor = "yellow";
+       function new_second()
+       {  
+           document.querySelector("p.class2").style.backgroundcolor = "yellow";
+       }
+     </script> 
+    
+</body>
+</html>
